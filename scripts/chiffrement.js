@@ -36,10 +36,10 @@ function chiffrerChaine(chaine){
 //Fonction qui va chiffrer un Relevé d'Identité Bancaire sous forme d'un tableau d'entier en utilisant la fonction chiffrerChaîne()
 function chiffrerRib(rib){
 	const tableauRib = rib.split(" ");
-	let tabRIbChiffre = [];
+	let tabRibChiffre = [];
 	for (let chaine of tableauRib)
-		tabRIbChiffre.push(chiffrerChaine(chaine));
-	return tabRIbChiffre;
+		tabRibChiffre.push(chiffrerChaine(chaine));
+	return tabRibChiffre;
 }
 
 module.exports = { chiffrerCaractere, chiffrerChaine, chiffrerRib };
