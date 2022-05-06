@@ -33,5 +33,13 @@ function chiffrerChaine(chaine){
 	}
 	return parseInt(chiffre);
 }
+//Fonction qui va chiffrer un Relevé d'Identité Bancaire sous forme d'un tableau d'entier en utilisant la fonction chiffrerChaîne()
+function chiffrerRib(rib){
+	const tableauRib = rib.split(" ");
+	let tabRIbChiffre = [];
+	for (let chaine of tableauRib)
+		tabRIbChiffre.push(chiffrerChaine(chaine));
+	return tabRIbChiffre;
+}
 
-module.exports = { chiffrerCaractere, chiffrerChaine };
+module.exports = { chiffrerCaractere, chiffrerChaine, chiffrerRib };

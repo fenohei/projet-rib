@@ -9,3 +9,7 @@ console.log(fonction.chiffrerCaractere(caractere));
 //Test du deuxième fonction chiffrement d'une chaîne de caractère
 const chaine = prompt("Saisir une chaîne :");
 console.log(fonction.chiffrerChaine(chaine));
+
+//Test du troisième fonction chiffrement d'un Relevé d'Identité Bancaire
+const rib = prompt("Saisir une Relevé d'Identité Bancaire :");
+console.log(fonction.chiffrerRib(rib));
