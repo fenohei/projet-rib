@@ -25,4 +25,13 @@ function chiffrerCaractere(caractere){
 	return caractere;
 }
 
-module.exports = { chiffrerCaractere };
+//Fonction qui va chiffrer une chaîne de caractère en utilisant la fonction précédante
+function chiffrerChaine(chaine){
+	let chiffre = '';
+	for(let caractere of chaine){
+		chiffre += chiffrerCaractere(caractere);
+	}
+	return parseInt(chiffre);
+}
+
+module.exports = { chiffrerCaractere, chiffrerChaine };
