@@ -20,7 +20,7 @@ console.log(chiffrement.chiffrerRib(rib));
 const tableauRibChiffre = chiffrement.chiffrerRib(rib)
 console.log(`La clé RIB de ${tableauRibChiffre} est ${calcule.calculeRib(tableauRibChiffre)}`);
 
-//Test du fonction de vérification
+//Test du fonction de vérification avec plusieurs RIB
 const serie = [
 	'blHhf sE6xP ReIXBOX7ih 88', 
 	'at4Mu kCZpS nKzy4Ro0nk 83', 
@@ -36,7 +36,5 @@ const serie = [
 	'V0Pal 3zcgv M7u8nT8IYs 22',
 	'38f12 vsB7n xb8Du2fLuz 16',
 	't8qWE pzOSO EQx4RpyziX 33'];
-//console.log(rib + " => " + verifie.verifier(rib));
-
 for (let rib of serie)
     console.log(rib + " => " + verifie.verifier(rib));
